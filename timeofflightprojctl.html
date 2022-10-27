@@ -1,0 +1,237 @@
+<html>
+<body>
+<style type="text/css">
+body{background-color:lightyellow;
+    }		
+	input{font-size:5vw;
+	}
+	span{font-size:5vw;
+	}
+	button{background-color:lightgreen;
+	width:15vw;
+	height:10vw;
+	border: 5px outset lightgreen;
+	font-size:4vw;
+	}
+	.grid{display:grid;
+	grid-template-columns:25vw 75vw;
+	padding:3vw;
+	font-size:4vw;
+	}
+	.leftnormal{float:right;
+	padding:1vw;
+	border: 1vw ;
+	background-color:lightyellow;
+	
+	}
+	.rightnormal{padding:1vw;
+	border: 1vw ;
+	background-color:lightyellow;
+	}
+	.bottomgrid{
+	padding:4vw;
+	position: fixed; 
+	bottom:0;
+	background-color:lightyellow;
+	width:100vw;
+	font-size:3vw;
+	}
+	.switch{background-color:white;
+	width:9vw;
+	height:10vw;
+	border: 5px outset white;
+	font-size:4vw;
+	padding-left:0;
+	}
+	#text{background-color:white;
+	}
+
+
+</style>
+
+
+<div style="
+	 background-color: lightgreen;
+	 color: black;
+	 position: fixed;
+	 top: 1vw;
+	 left: 1vw;
+	 right: 1vw;
+	 border: 2vw outset lightgreen;
+	 height: 45vw;
+	 width:1fr;
+	 z-index: 100;
+	 font-size: 5vw;"><a href="./index.html">home</a>
+	 <h3>Question</h3>
+	  Derive an expression for the time of flight <br>
+	  of a projectile motion.
+	  <div style="position:fixed; right:1vw;">
+	  
+	  <div style="position:fixed; right:1vw;">
+	  <button onclick="ction()">subs</button>
+	  </div>
+	  <div style="position:fixed; right:16vw;">
+	  
+	  
+	  <div style="Display:none;background-color:lightgreen;font-size:5vw;" id="myDIV1">
+	  1)U=Usin&theta;<br>
+	  2)V=U+at<br>
+	  </div>
+</div>	  
+</div>
+</div>
+<div style="height:48vw;"> 
+</div>
+<div>
+<img src="projectile.jpeg" alt="Diagram">
+</div>
+<div class="grid">	  
+	  <div >
+		  <input id="text" size="2" class="leftnormal"type="text">
+	  </div>
+	  <div >=
+		  <input id="text" size="7"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="grid">	  
+	  <div >
+		  <input id="text" size="2" class="leftnormal"type="text">
+	  </div>
+	  <div >=
+		  <input id="text" size="7"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="grid">	  
+	  <div >
+		  <input id="text" size="2" class="leftnormal"type="text">
+	  </div>
+	  <div >=
+		  <input id="text" size="7"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="grid">	  
+	  <div >
+		  <input id="text" size="2" class="leftnormal"type="text">
+	  </div>
+	  <div style="position:relative;">=
+		  <input id="text" size="9"class="rightnormal"type="text">	  
+	  <div style="position:absolute;left:1em" >
+	  <span 
+	  class="input" 
+	  role="textbox" 
+	  STYLE="text-decoration:overline"
+	  contenteditable>
+	  &ensp;&ensp;&ensp;&ensp;
+	  </span>
+	  </div>
+	  </div>
+</div>
+<div class="grid">	  
+	  <div >
+		  <input id="text" size="2" class="leftnormal"type="text">
+	  </div>
+	  <div >=
+		  <input id="text" size="7"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="grid">	  
+	  <div >
+		  <input id="text" size="2" class="leftnormal"type="text">
+	  </div>
+	  <div style="position:relative;">=
+		  <input id="text" size="9"class="rightnormal"type="text">	  
+	  <div style="position:absolute;left:1em" >
+	  <span 
+	  class="input" 
+	  role="textbox" 
+	  STYLE="text-decoration:overline"
+	  contenteditable>
+	  &ensp;&ensp;&ensp;&ensp;&ensp;
+	  </span>
+	  </div>
+	  </div>
+</div>
+<div style="height:38vw;"> 
+</div>
+<div class="bottomgrid">
+	<div style="Display:none;background-color:lightgreen;font-size:5vw" id="myDIV">
+	1)Take V=U+at<br>
+	2)substitute v=0, u=usin&theta;, a=-g<br>
+	3)t=usin&theta;/g<br>
+	4)T=2t &there4;T=2usin&theta;/g
+	</div>
+	
+	<button onclick="changeid()">&rarr;</button>
+	<button onclick="changeid()">&#8626;</button>
+	<button onclick="nction()">steps</button>
+	
+	
+	
+	<div id="keyboard">
+	<input class="switch" type="button" value="+">
+	<input class="switch" type="button" value="-">
+	
+	<input class="switch" type="button" value="&theta;">
+	<input class="switch" type="button" value="sin">
+	<input class="switch" type="button" value="&#189;">
+	<input class="switch" type="button" value="&#178;"><br>
+	
+	<input class="switch" type="button" value="u">
+	<input class="switch" type="button" value="v">
+	<input class="switch" type="button" value="a">
+	<input class="switch" type="button" value="t">
+	<input class="switch" type="button" value="s">
+	<input class="switch" type="button" value="g">
+	
+	</div>
+	<script>
+	function changeid(){
+	document.getElementById('text').id='tex';}
+	
+	function ction() {
+	var x = document.getElementById("myDIV1");
+	if (x.style.display === "none") {
+	x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	}
+	
+	function nction() {
+	var x = document.getElementById("myDIV");
+	if (x.style.display === "none") {
+	x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	}
+	
+	(function() {
+	'use strict';
+	var i,c;
+	function init(){ 
+	i=document.getElementById('keyboard').getElementsByTagName('input');
+	for(c=0;c<i.length;c++) {
+	if(i[c].type==='button') {
+	i[c].addEventListener('onclick',makeClickHandler(c));
+	}
+	}
+	
+	document.getElementById('clear').onclick=function() {
+	document.getElementById('text').value='';
+	}
+	}
+	
+	function makeClickHandler(c) {
+	i[c].onclick=function() {
+	document.getElementById('text').value+=this.value.toLowerCase();
+	};
+	}
+	
+	window.addEventListener?
+	window.addEventListener('load',init,false):
+	window.attachEvent('onload',init);
+	})();
+	</script>
+	  </body>
+	  </html>
